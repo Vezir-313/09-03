@@ -1,34 +1,34 @@
 /*HEADER*/
-var headerSearch = document.getElementById('search-form');
-headerSearch.addEventListener("click", function() {
-
-
-    headerSearch.style.position = 'relative'
-
-    var headerSearchVariab = 0;
-
-    var headerSearchAnim = setInterval(function() {
-        headerSearch.style.left = headerSearchVariab + "px";
-        if (headerSearchVariab < -81) {
-            clearInterval(headerSearchAnim);
-        }
-        if (headerSearch < -41) {
-            headerSearchVariab -= 14;
-        } else {
-            headerSearchVariab -= 10;
-        }
-    }, 1);
-
-    console.log("salam")
-})
-for (var i = 1; i < 6; i++) {
-    document.getElementById("s" + i).addEventListener("click", function() {
-        headerSearch.style.position = 'relative'
-        headerSearch.style.left = '0px';
-        console.log("salam")
-    })
-
-}
+// var headerSearch = document.getElementById('search-form');
+// headerSearch.addEventListener("click", function() {
+//
+//
+//     headerSearch.style.position = 'relative'
+//
+//     var headerSearchVariab = 0;
+//
+//     var headerSearchAnim = setInterval(function() {
+//         headerSearch.style.left = headerSearchVariab + "px";
+//         if (headerSearchVariab < -40) {
+//             clearInterval(headerSearchAnim);
+//         }
+//         if (headerSearch < -20) {
+//             headerSearchVariab -= 10;
+//         } else {
+//             headerSearchVariab -= 8;
+//         }
+//     }, 1);
+//
+//     console.log("salam")
+// })
+// for (var i = 1; i < 6; i++) {
+//     document.getElementById("s" + i).addEventListener("click", function() {
+//         headerSearch.style.position = 'relative'
+//         headerSearch.style.left = '0px';
+//         console.log("salam")
+//     })
+//
+// }
 
 /*section 1*/
 var sec = document.getElementById('s1');
@@ -599,6 +599,9 @@ var teamIconsArr = [];
 for (var i = 0; i < 8; i++) {
     teamImgArr[i] = 'img/team/' + i + '.jpg';
 }
+
+
+
 for (var i = 0; i < teamImgArr.length; i++) {
     /////////////////////////////frame/////////////////////////////
     var teamFrm = document.createElement('div');
